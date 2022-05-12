@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website for showing off personal skills and projects">
+        <title>Luke's Resume</title>
+        <style>
+            h2 {
+                font-family: arial;
+            }
+            p {
+                font-family:arial;
+            }
+            .nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            .nav li{
+                float: left;
+            }
+            .nav li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 28px 32px;
+                text-decoration: none;
+                font-family: arial;
+            }
+            .nav li a:hover {
+                background-color: rgb(18, 88, 195);
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+            }
+            .header {
+                background-color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            .column {
+                float: left;
+                width: 33.33%;
+                padding:15px;
+            }
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width:600px){
+                .column {
+                    width: 100%;
+                }
+            }
+            footer {
+                background-color: #333333;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header style="background-color: #ffffff; padding: 15px">
+            <h1 style="font-family: arial; margin-left:10px">Lucas Sprung</h1>
+            <h2 style="margin-left:10px">BEng Mechatronics Engineering</h2>
+            <p style="margin-left:10px"><b>email:</b> sprunglucas@gmail.com <b>Phone:</b> 289-404-8797 </p>
+            
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Projects.html">Projects</a> </li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="Experience.html">Experience</a></li>
+                    <li><a href="Interests.html">Interests</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="header">
+                <h2>3D Printing Gallery</h2>
+                <p>
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <h2>Education</h2>
+                    <p>
+                        
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2>Skills</h2>
+                    <p>
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2>Interests</h2>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h3 style="font-family: arial; color: white; text-align: center">email: sprunglucas@gmail.com</h3>
+            <h3 style="font-family: arial; color: white; text-align: center">Phone: 289-404-8797</h3>
+        </footer>
+    </body>
+</html>
