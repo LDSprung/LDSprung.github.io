@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website for showing off personal skills and projects">
+        <title>Luke's Resume</title>
+        <style>
+            h2 {
+                font-family: arial;
+            }
+            p {
+                font-family:arial;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            li{
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 28px 32px;
+                text-decoration: none;
+                font-family: arial;
+            }
+            li a:hover {
+                background-color: rgb(18, 88, 195);
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+            }
+            img {
+                border:5px solid rgb(18, 88, 195);
+                border-radius: 8px;
+            }
+            video {
+                border:5px solid rgb(18, 88, 195);
+                border-radius: 8px;
+            }
+            .header {
+                background-color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            .column {
+                float: left;
+                width: 33.33%;
+                padding:15px;
+            }
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width:600px){
+                .column {
+                    width: 100%;
+                }
+            }
+            footer {
+                background-color: #333333;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header style="background-color: #ffffff; padding: 15px">
+            <h1 style="font-family: arial; margin-left:10px">Lucas Sprung</h1>
+            <h2 style="margin-left:10px">BEng Mechatronics Engineering</h2>
+            <p style="margin-left:10px"><b>email:</b> sprunglucas@gmail.com <b>Phone:</b> 289-404-8797 </p>
+            
+            <ul>
+                <li><a href="Luke.html">Home</a></li>
+                <li><a href="Projects.html">Projects</a> </li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Interests.html">Interests</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="header">
+                <h2>Projects</h2>
+                <p>There are a multitude of projects, both personal and professional, that I have worked on 
+                    and I am excited to share them with you. You can click on the title of a project to learn 
+                    more about it.
+                </p>
+            </div>
+            <!--First Row-->
+            <div class="row">
+                <div class="column">
+                    <h2><a href="SARATechReport.pdf" target="_blank">Robot Arm</a></h2>
+                    <img width="100%" src="Assembly Render.jpg" alt="Render of Robot Arm"/>
+                    <p>The Super Advanced Robot Arm, or SARA, was a personal project of mine designed to apply 
+                        knowledge learned during my education to work on something that was fun and interesting
+                        for me. SARA was designed and maufactured by me using solidworks and my personal 3D printer.
+                        SARA's design inspiration was taken from different sources of professional robot arms
+                        and simplified for ease of maintenece and manufacturing, while leaving lots of room for
+                        modification and improvements. The end-effector of the robot was designed to hold a marker,
+                        allowing the robot to be controlled or automated to draw on a page. SARA uses servo motors
+                        along with an arduino microcontroller and membrane switch for manual control. A full inverse
+                        displacement solution was developed to allow the robot to be automated for certain tasks.
+                        Current iterations and improvements are still being made to this projects.
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2><a href="CapstoneReport.pdf" target="_blank">Electrical Power Conversion Unit</a></h2>
+                    <img width="100%" src="Capstone Image.jpg" alt="Image of Capstone Project"/>
+                    <p>The Electrical Power Conversion Unit was my capstone project as a part of my final year of my 
+                        undergraduate degree. The purpose of this project was to create a way for clean, off-grid 
+                        energy to be produced at any rotational speed. Using a continuously variable transmission,
+                        or CVT, and connecting it to an induction machine, a device was created to convert 
+                        rotational mechanical energy into electrical power no matter what the rotational speed was.
+                        The induction machine produced 120V AC at a specific speed, and the transmission was modified
+                        to automatically gear the generator down if the speed would cause the voltage to go above 
+                        what is safe for the device.
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2><a href="MechDesignReport.pdf" target="_blank">Autonomous Mobile Robot</a></h2>
+                    <img width="100%" src="MechDesignImage.jpg" alt="Image of Mechatronics Design Robot"/>
+                    <p>One of the school projects that I worked on during my education was a small mobile robot designed to 
+                        solve a maze of a known layout. The robot was assembled using parts designed by our group and 
+                        manufactured on my personal 3D printer. The electronics for the robot were provided by the school,
+                        and consisted of an arduino microcontroller, 2 DC motors, and a few distance sensors. The algorithm 
+                        for the robot included a PID that controlled the voltage given to each of the wheels, to correct any 
+                        drift from left to right sensed by the distance sensors.
+                    </p>
+                </div>
+            </div>
+            
+            <!--Second Row-->
+            <div class="row">
+                <div class="column">
+                    <h2><a href="TurtlebotReport.pdf" target="_blank">Turtlebot Mapping and Localization</a></h2>
+                    <video width="100%" src="TurtlebotVideo.mp4" controls></video>
+                    <p>This project involved using ROS to get a tutlebot wafflepi to complete different
+                        milestones that build off of each other. The milestones involved mapping a room of 
+                        approximately 15 square meters, detecting and avoiding packages, and retrieving these
+                        packages and returning them to the start point. The mapping and localization was document
+                        with a lidar sensor mounted on the top of the robot. The detection of the packages was done 
+                        with the help of a camera and a custom developed search algorithm. Package retrieval was 
+                        accomplished using custom 3D printed parts to grab the package and return to the start point.
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2><a href="">Some Other Project</a></h2>
+                    <img width="100%" src="" alt="Image of whatever this project is"/>
+                    <p>test
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2><a href="">Whatever This Is</a></h2>
+                    <img width="100%" src="" alt="Image of whatever this project is"/>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h3 style="font-family: arial; color: white; text-align: center">email: sprunglucas@gmail.com</h3>
+            <h3 style="font-family: arial; color: white; text-align: center">Phone: 289-404-8797</h3>
+        </footer>
+    </body>
+</html>

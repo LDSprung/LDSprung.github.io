@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website for showing off personal skills and projects">
+        <title>Luke's Resume</title>
+        <style>
+            h2 {
+                font-family: arial;
+            }
+            p {
+                font-family:arial;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            li{
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 28px 32px;
+                text-decoration: none;
+                font-family: arial;
+            }
+            li a:hover {
+                background-color: rgb(18, 88, 195);
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+            }
+            img {
+                border:5px solid rgb(18, 88, 195);
+                border-radius: 8px;
+            }
+            video {
+                border:5px solid rgb(18, 88, 195);
+                border-radius: 8px;
+            }
+            .header {
+                background-color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            .column {
+                float: left;
+                width: 33.33%;
+                padding:15px;
+            }
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width:600px){
+                .column {
+                    width: 100%;
+                }
+            }
+            footer {
+                background-color: #333333;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header style="background-color: #ffffff; padding: 15px">
+            <h1 style="font-family: arial; margin-left:10px">Lucas Sprung</h1>
+            <h2 style="margin-left:10px">BEng Mechatronics Engineering</h2>
+            <p style="margin-left:10px"><b>email:</b> sprunglucas@gmail.com <b>Phone:</b> 289-404-8797 </p>
+            
+            <ul>
+                <li><a href="Luke.html">Home</a></li>
+                <li><a href="Projects.html">Projects</a> </li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Interests.html">Interests</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="header">
+                <h2>Skills</h2>
+                <p>I have a wide range of skills to offer, below you will find many of the different things
+                    I have learned throught my education and personal experiences.
+                </p>
+            </div>
+            <!--First Row-->
+            <div class="row">
+                <div class="column">
+                    <h2>3D Printing</h2>
+                    <p>3D printing has become a passion of mine. I bought my first 3D printer a few years ago 
+                        to try and teach myself some useful skills in rapid prototpying, and I have been 
+                        using it ever since. Whether its designing and creating parts for school projects, 
+                        designing personal projects of my own, and manufacturing and post processing props from 
+                        TV, video games, and movies, I would consider myself extremely knowledgeable in how these 
+                        machines work, especially FDM methods of rapid protptyping. Below you can see some images of
+                        a few of the many things I have made over the past few years.
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2>3D Modeling and Design</h2>
+                    <p>Along with 3D printing comes 3D modeling. I have been 3D modeling for many years across
+                        multiple different programs including: Solidworks, Rhino6, NX, 3DSMax, and Autodesk
+                        Inventor. I am extremely proficient at 3D modeling an can work efficiently to create 
+                        complexe shapes and designs.
+                    </p>
+                    
+                </div>
+
+                <div class="column">
+                    <h2>Programming</h2>
+                    <p>As a student of mechatronics engineering, I was taught to program in multiple languages
+                        for different application including object oriented programming and microcontroller design.
+                        I am proficient in C/C++, Java, Javascript, Python, HTML/CSS, Arduino, ROS, and Batch. I 
+                        also tend to pick things up fairly quickly, and am open to learning any new programming 
+                        languages that can assist me in becoming a better engineer.
+                    </p>
+                </div>
+            </div>
+            
+            <!--Second Row-->
+            <div class="row">
+                <div class="column">
+                    <h2>The Blade</h2>
+                    <p>
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2>Skill</h2>
+                    <p>
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2>Skill</h2>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h3 style="font-family: arial; color: white; text-align: center">email: sprunglucas@gmail.com</h3>
+            <h3 style="font-family: arial; color: white; text-align: center">Phone: 289-404-8797</h3>
+        </footer>
+    </body>
+</html>

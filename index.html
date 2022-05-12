@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website for showing off personal skills and projects">
+        <title>Luke's Resume</title>
+        <style>
+            h2 {
+                font-family: arial;
+            }
+            p {
+                font-family:arial;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            li{
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 28px 32px;
+                text-decoration: none;
+                font-family: arial;
+            }
+            li a:hover {
+                background-color: rgb(18, 88, 195);
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+            }
+            .header {
+                background-color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            .column {
+                float: left;
+                width: 33.33%;
+                padding:15px;
+            }
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width:600px){
+                .column {
+                    width: 100%;
+                }
+            }
+            footer {
+                background-color: #333333;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header style="background-color: #ffffff; padding: 15px">
+            <h1 style="font-family: arial; margin-left:10px">Lucas Dean Sprung</h1>
+            <h2 style="margin-left:10px">BEng Mechatronics Engineering</h2>
+            <p style="margin-left:10px"><b>email:</b> sprunglucas@gmail.com <b>Phone:</b> 289-404-8797 </p>
+            
+            <ul>
+                <li><a href="Luke.html">Home</a></li>
+                <li><a href="Projects.html"">Projects</a> </li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Interests.html">Interests</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="header">
+                <h2>Hello, and Welcome</h2>
+                <p>This website was created by me to not only be a convenient way for people like you to view
+                    my skills and experience, but to also showcase my skills in web development. Please use the
+                    navigation tab above to conveniently look through projects I've worked on and past experience.
+                    The information below will give you a short overview of who I am, and what my skills are.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <h2>Education</h2>
+                    <p>I am a graduate of the University of Ontatio Institute of Technology, where I studied
+                        mechatronics engineering from 2018-2022. Over my education I obtained a wide variety 
+                        of skills usefull in applications across multiple fields. I have education in mechanical
+                        and automotive mechanisms and principles, including engine efficiency and thermodynamics;
+                        circuit design including filters and amplifiers; embedded systems and control logic, 
+                        especially with arduino, dealing with sensors and instrumentation and PID control; 
+                        Industrial automation indlucing PLC ladder logic, hydraulics, and pump controls; Software
+                        design with multiple languages; Robotics and automation including planar and mobile robotics.
+                        As you navigate through this website, you'll learn that I have great ability to apply all 
+                        the knowledge I've learned, and that I'm passionate about continuing to learn new things.
+                        
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2>Skills</h2>
+                    <p>In addition to the knowledge learned through my education, I also have a wide variety
+                        of self-taught skills and character traits that are extremely useful no matter what
+                        field they are applied to. A lot of my best skills come from my education and work 
+                        experience, but also from things I taught myself. Whether it was taught professionaly
+                        or self-taught, I think you'll find my skills valuable in a wide variety of work 
+                        settings. You can use the Skills tab in the navigation bar to learn more about what I'm 
+                        good at, and what I can offer.
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2>Interests</h2>
+                    <p>I am very passionate about the work that I do, and how it can impact the world around me.
+                        I have a very large range of interest related to engineering that keep me motivated to
+                        learn and expand my knowledge and perform my work to the absolute best of my ability.
+                        Some of my major interests include 3D printing, Robotics, Space Exploration, aquatic 
+                        engineering, and dissability studies. You can learn more about why I enjoy these topics
+                        by navigating to the "Interests" tab in the menu at the top of the screen.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h3 style="font-family: arial; color: white; text-align: center">email: sprunglucas@gmail.com</h3>
+            <h3 style="font-family: arial; color: white; text-align: center">Phone: 289-404-8797</h3>
+        </footer>
+    </body>
+</html>
+
